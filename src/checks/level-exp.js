@@ -13,6 +13,6 @@ module.exports = {
       slow: 1250000,
       'fast-then-very-slow': 1640000};
 
-    return maxExp[growthRate] > currentExp;
+    return maxExp[growthRate] === currentExp;
   }
 };
