@@ -1,8 +1,8 @@
 module.exports = {
   description: "A Pokémon's experience should match its level.",
   field: 'level',
+  filter: {level: 100},
   test (pkmn) {
-    const currentLevel = pkmn.level;
     const currentExp = pkmn.exp;
     const growthRate = pkmn.growthRate;
     const maxExp = {
@@ -13,9 +13,6 @@ module.exports = {
       slow: 1250000,
       'fast-then-very-slow': 1640000};
 
-    if (currentLevel === 100) {
-      return maxExp[growthRate] > currentExp;
-    }
-    return currentLevel < 100;
+    return maxExp[growthRate] > currentExp;
   }
 };
