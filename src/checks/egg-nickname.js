@@ -3,6 +3,6 @@ module.exports = {
   filter: {isEgg: true},
   field: 'isNicknamed',
   test (pkmn) {
-    return pkmn.isNicknamed === false;
+    return !pkmn.isNicknamed;
   }
 };
