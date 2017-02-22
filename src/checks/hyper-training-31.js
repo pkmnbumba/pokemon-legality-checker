@@ -9,6 +9,6 @@ module.exports = {
       pkmn.ivSpAtk === 31 && pkmn.hyperTrainedSpAtk ||
       pkmn.ivSpDef === 31 && pkmn.hyperTrainedSpDef ||
       pkmn.ivSpe === 31 && pkmn.hyperTrainedSpe
-);
+    );
   }
 };
